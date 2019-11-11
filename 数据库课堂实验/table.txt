@@ -1,0 +1,6 @@
+表名：s
+属性：sno char(9),sname char(10),age int(3),sex char(3)
+表名：c
+属性：cno char(16),cname char(16),teacher char(16))
+表名：sc
+属性：sno char(16),cno char(16),grade char(16)
