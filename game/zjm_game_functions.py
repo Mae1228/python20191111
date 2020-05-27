@@ -1,8 +1,8 @@
 import sys
 from time import sleep
 import pygame
-from zjm_bullet import Bullet
-from zjm_alien import Alien
+from game.zjm_bullet import Bullet
+from game.zjm_alien import Alien
 
 def check_keydown_events(event, set, screen, ship, bullets):
     """响应按键"""

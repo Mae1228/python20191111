@@ -1,10 +1,10 @@
 import pygame
 from pygame.sprite import Group
 
-from zjm_settings import Settings
-from zjm_game_stats import GameStats
-from zjm_ship import Ship
-import zjm_game_functions as gf
+from game.zjm_settings import Settings
+from game.zjm_game_stats import GameStats
+from game.zjm_ship import Ship
+import game.zjm_game_functions as gf
 
 def run_game():
     #初始化pygame、设置屏幕对象
