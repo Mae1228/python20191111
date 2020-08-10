@@ -26,6 +26,7 @@ for i in range(5):
 print(ord('张'))#字符转换成ASCII
 print(chr(24352))#ASCII转换成字符
 # 不能够使用关键字(33)和内置函数名(BIF)
+# 关于进制转化的内置函数  2进制bin()   8进制boct()    10进制int()    16进制hex()
 import keyword
 print(keyword.kwlist)#关键字
 print(dir(__builtins__))#内置函数
@@ -86,7 +87,53 @@ for i in range(1,10):
     print()
 
 
+for i in range(1, 10):
+    print('*'*i)
+print('6'*3 + 'codemao')
+l = [['1'], ['1'], ['1']] * 3
+print(l)
+x = ['1'] + ['2', '3']
+print(x)
+print(x*3)
 
+
+# while 循环 多个计数器 while True: 永远循环
+num = 1
+t = 1
+tnum = 0
+while num <= 5:
+    t = t * num
+    tnum += t
+    num += 1  #复合运行中的一个赋值
+print(tnum)
+
+
+# 条件分支  单分支 if  双分支 if...else  多分支 if...elif(...)...(else)
+# 闰年计算器
+# 能被4整除且不能被100整除的年份，或者是能被400整除的年份叫做闰年
+y = int(input('请输入年份：'))
+if y%400 == 0:
+    print('世纪闰年')
+else:
+    if y%4 == 0:
+        if y%100 == 0:
+            #if y%400 == 0:
+                #print('世纪闰年')
+            #else:
+                print('平年')
+        else:
+            print('普通闰年')
+
+
+y = int(input('请输入年份：'))
+if (y%4 == 0 and y%100 != 0) or y%400 == 0:
+    print('闰年')
+else:
+    print('平年')
+
+
+
+# 运算符
 # 水仙花数：各位数上的数字的三次方的和就是这个数
 for i in range(100,1000):
     ge=i%10
